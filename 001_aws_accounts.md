@@ -14,3 +14,12 @@ An account has...
 1. Identity Access Management (IAM) creates users, groups, roles
 2. they can be given full or limited permissions
     * all users, groups, roles start with no permissions
+
+## MFA - multi factor authentication
+1. By default single factor is used (username, password)
+2. MFA can be used on a key fob (generates codes), or virtual device added to apps like Authy accessed on your phone
+3. Activate MFA for a specific user 
+4. Upon login AWS gens a secret key (& additional info tied to key), which needs to be input to an authenticator.
+    * AWS can create a QR code based on above info.
+    * It's scanned into the phone, app displays a new code
+    * The app can hold one or more virtual MFAs 
