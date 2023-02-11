@@ -16,10 +16,15 @@ An account has...
     * all users, groups, roles start with no permissions
 
 ## MFA - multi factor authentication
-1. By default single factor is used (username, password)
+1. By default single factor/one factor is used (username, password)
 2. MFA can be used on a key fob (generates codes), or virtual device added to apps like Authy accessed on your phone
 3. Activate MFA for a specific user 
 4. Upon login AWS gens a secret key (& additional info tied to key), which needs to be input to an authenticator.
     * AWS can create a QR code based on above info.
     * It's scanned into the phone, app displays a new code
     * The app can hold one or more virtual MFAs 
+    * This code is then entered into the AWS sign on for verification
+
+## Setting up MFA for the root user
+1. Logged in as the root user, select user at top right of page and take Security credentials. 
+2. Activate MFA
