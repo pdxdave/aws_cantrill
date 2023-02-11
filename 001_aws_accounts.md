@@ -26,5 +26,18 @@ An account has...
     * This code is then entered into the AWS sign on for verification
 
 ## Setting up MFA for the root user
-1. Logged in as the root user, select user at top right of page and take Security credentials. 
-2. Activate MFA
+1. Log in as the root user, select user at top right of page and take Security credentials. 
+2. Activate MFA.  Three options appear: virtual mfa device (e.g., software), u2f security key (e.g., yubikey), other hardware device (e.g., gemalto token)
+3. I used Twilio Authenticator software solution.
+
+## Billing
+1. To view billing overview, as the root user go to top right of screen, dropdown root user name and take Billing Dashboard
+2. View monthly bills
+    * Select Bills. A monthly dropdown appears outlining all of the AWS Service Charges
+3. Setup Billing Preferences
+    * Select receive pdf invoice my email and receive free tier usage alerts.  Assign to an email.
+4. Setup a Budget
+    * First go to Cost Explorer. 
+    * Go to Budgets and Create budget
+    * There are different kinds of budgets: cost, usage, savings, reservation. We'll make a Cost budget.
+    
