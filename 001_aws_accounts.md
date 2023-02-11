@@ -40,4 +40,9 @@ An account has...
     * First go to Cost Explorer. 
     * Go to Budgets and Create budget
     * There are different kinds of budgets: cost, usage, savings, reservation. We'll make a Cost budget.
-    
+    * Name the budget, set amount to monthly, recurring, fixed, and enter an amount.
+    * Next screen set an alert budget threshold.
+5. !!! In root user, go to Accounts, scroll down and enable IAM User and Role Access to Billing Info.
+
+
+## IAM Basics
