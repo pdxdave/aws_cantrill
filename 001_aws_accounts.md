@@ -46,3 +46,15 @@ An account has...
 
 
 ## IAM Basics
+1. The root user is created with the AWS account.  In affect, they are the same: account and root user.
+2. New users should be given ```least privileged access```.  Only what they need.
+3. Every AWS account comes with its own IAM database. IAM is GLOBAL, so it is secure against all regions.
+4. IAM allows for the creation of three different identity types: User, Group, Roles.
+5. Roles can be used by AWS Services, or for granting external access to your account.  Roles are generally used when you want to grant access to services in your acct to an uncertain number of entities.
+6. Policies on their own do nothing. They only allow or deny AWS services when attached to a User, Group or Role.
+7. IAM has 3 main roles
+    * It's an ID provider. Create, modify, delete identities
+    * It authenticates the identities (name, password)
+    * Once authorized it allows or denies access to resources
+8. IAM is no cost, it's Global, only controls its identies, has no direct control on external accts or users
+9. It allows use of idendity federation (e.g., facebook, google) and use them indirectly to access AWS resources.
