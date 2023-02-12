@@ -22,6 +22,7 @@
 
 | Public Cloud | Private Cloud| Multi Cloud | Hybrid Cloud |
 | ------------ | ------------ | ------------| ------------ |
-| 1 public     | on-premises  |  using more |  public and  |
-|  cloud       |  real cloud  |     than 1  | private cloud|
-|              |              | public cloud|              |
+|  1 public    | on-premises  |  using more |  public and  |
+|   cloud      |  real cloud  |     than 1  | private cloud|
+|              |              | public cloud| not public w |
+|              |              | public cloud|legacy on-site|
