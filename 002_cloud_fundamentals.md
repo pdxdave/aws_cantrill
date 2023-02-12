@@ -26,3 +26,26 @@
 |   cloud      |  real cloud  |    than 1   | private cloud| legacy on-premises |
 |              |              | public cloud| not public w |
 |              |              |             |legacy on-site|
+
+
+## Service Models
+1. Infractructure stack (IS). The IS is a collection of things that application needs all stack on top of each other.
+
+| Application    |
+| -----------    |
+| Data           |
+| -----------    |
+| Runtime        |
+| -----------    |
+| Container      |
+| -----------    |  
+| OS             |
+| -----------    |
+| Virtualization |
+| -----------    |
+| Servers        |
+| -----------    |
+| Infrastructure |
+| -----------    |
+| Facilities     |
+| -----------    |
