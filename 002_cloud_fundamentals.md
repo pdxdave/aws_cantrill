@@ -20,9 +20,9 @@
     * It's not hybrid if you use AWS public with your on-site equipment.
 6. A hybrid environment is AWS public with your on-site equipment.     
 
-| Public Cloud | Private Cloud| Multi Cloud | Hybrid Cloud |
-| ------------ | ------------ | ------------| ------------ |
-|  1 public    | on-premises  |  using more |  public and  |
-|   cloud      |  real cloud  |    than 1   | private cloud|
+| Public Cloud | Private Cloud| Multi Cloud | Hybrid Cloud | Hybrid Environment |
+| ------------ | ------------ | ------------| ------------ | ------------------ |
+|  1 public    | on-premises  |  using more |  public and  | public cloud w/    |
+|   cloud      |  real cloud  |    than 1   | private cloud| legacy on-premises |
 |              |              | public cloud| not public w |
 |              |              |             |legacy on-site|
