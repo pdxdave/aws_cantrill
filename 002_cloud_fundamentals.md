@@ -52,10 +52,10 @@
 
 2. Unit of consumption. It's what you use and pay for. From that point in the stack upward, you are responsible for management. This is what makes each service different.
 
-| On-Premises  | DC Hosted    | Multi Cloud | Hybrid Cloud | Hybrid Environment |
+| On-Premises  | DC Hosted    | IaaS        | PaaS         | SaaS               |
 | ------------ | ------------ | ------------| ------------ | ------------------ |
-| Responsible  | rent sever   |  using more |  public and  | public cloud w/    |
-| for all if it|  in data     |    than 1   | private cloud| legacy on-premises |
-|              |  center.     | public cloud| not public w |                    |
-|              | consumption  |             |legacy on-site|                    |
-|              | is 1         |             |              |                    |
+| Responsible  | rent sever   | vender mgns |  vender mgns | vender mgns it.    |
+| for all if it|  in data     |   1 to 4.   |   1 to 6.    |    you consume 9   |
+|              |  center.     | you consume | you consume  |                    |
+|              | consumption  |  and mng 5  |  and mgn 7   |                    |
+|              | is 1         |    and up   |  and up      |                    |
