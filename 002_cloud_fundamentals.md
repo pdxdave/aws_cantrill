@@ -29,24 +29,33 @@
 
 
 ## Service Models
-1. Infractructure stack (IS). The IS is a collection of things that an application needs that stack on top of each other.
+1. Infrastructure stack (IS). The IS is a collection of things that an application needs that stack on top of each other.
 
-| Application    | the application itself            |
-| Data           | creates or consumes               |
-| -----------    | --------------------------------- |
-| Runtime        | Python, Java, JS, C, C++, etc     |
-| -----------    | --------------------------------- |
-| Container      | Docker                            |
-| -----------    | --------------------------------- |
-| OS             | Linux, Windows                    |
-| -----------    | --------------------------------- |
-| Virtualization | severs running vm's               |
-| -----------    | --------------------------------- |
-| Servers        | 1 or more servers                 |
-| -----------    | ----------------------------------|
-| Infrastructure | storage, networking               |
-| -----------    | --------------------------------- |
-| Facilities     | bulding, power, physical security |
-| -----------    | --------------------------------- |
+| 9 Application    | the application itself            |
+| -----------      | --------------------------------- |
+| 8 Data           | creates or consumes               |
+| -----------      | --------------------------------- |
+| 7 Runtime        | Python, Java, JS, C, C++, etc     |
+| -----------      | --------------------------------- |
+| 6 Container      | Docker                            |
+| -----------      | --------------------------------- |
+| 5 OS             | Linux, Windows                    |
+| -----------      | --------------------------------- |
+| 4 Virtualization | severs running vm's               |
+| -----------      | --------------------------------- |
+| 3 Servers        | 1 or more servers                 |
+| -----------      | ----------------------------------|
+| 2 Infrastructure | storage, networking               |
+| -----------      | --------------------------------- |
+| 1 Facilities     | bulding, power, physical security |
+| -----------      | --------------------------------- |
 
-2. Unit of consumption.
+2. Unit of consumption. It's what you use and pay for. From that point in the stack upward, you are responsible for management. This is what makes each service different.
+
+| On-Premises  | DC Hosted    | Multi Cloud | Hybrid Cloud | Hybrid Environment |
+| ------------ | ------------ | ------------| ------------ | ------------------ |
+| Responsible  | rent sever   |  using more |  public and  | public cloud w/    |
+| for all if it|  in data     |    than 1   | private cloud| legacy on-premises |
+|              |  center.     | public cloud| not public w |                    |
+|              | consumption  |             |legacy on-site|                    |
+|              | is 1         |             |              |                    |
