@@ -75,5 +75,5 @@ An account has...
 5. Access keys have two parts: Access Key ID, Secret Access Key
     * The Secret Access Key must be copied the time it was created. AWS will not let you see it again.
     * The Secret Access Key cannot be changed alone. The AK and SAK must be deleted and re-created.
-    * "Rotating Access Keys" means to delete existing set and make a new set.
+    * "Rotating Access Keys" means to delete existing set and make a new set.  You can create ```TWO sets``` of Access Keys, make one innactive, the other innactive, and switch back and forth.
     * The Root User can have them, but it's not recommended.  Usually just for IAM entities. Not Roles.
