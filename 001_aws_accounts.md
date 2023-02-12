@@ -56,5 +56,5 @@ An account has...
     * It's an ID provider. Create, modify, delete identities
     * It authenticates the identities (name, password)
     * Once authorized it allows or denies access to resources
-8. IAM is no cost, it's Global, only controls its identies, has no direct control on external accts or users
-9. It allows use of idendity federation (e.g., facebook, google) and use them indirectly to access AWS resources.
+8. IAM is no cost, it's Global, only controls its identites, has no direct control on external accts or users
+9. It allows use of identity federation (e.g., facebook, google) and use them indirectly to access AWS resources.
