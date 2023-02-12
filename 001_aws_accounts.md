@@ -58,3 +58,22 @@ An account has...
     * Once authorized it allows or denies access to resources
 8. IAM is no cost, it's Global, only controls its identites, has no direct control on external accts or users
 9. It allows use of identity federation (e.g., facebook, google) and use them indirectly to access AWS resources.
+
+## Create IAM identity with Admin permissions
+1. In the IAM service, to the right there is the AWS Account.  It has an ID, Alias and URL.
+2. If you're going to sign-on with any IAM identity then you need to use a sign-on URL for IAM users. We can create an alias for a more informative sign-on. 
+    * click create under Account Alias. Type in a preferred alias. It must be unique to help identify the account you're logging into. 
+    * it needs to be globally unique. I made my dm-general-kamaboko
+3. Now create a new identity and give it AdministratorAccess. Access Management > Users > Add Users > follow instructions.  Attach existing policy directly to the user. 
+4. Make sure everything looks good.  Then copy the customized sign-on-url and save it to a document. We'll copy and paste this in the url to sig-on as the newly created admin user.  Just put in the user name and password.
+
+## IAM Access Keys
+1. When logging into the management console you'll either use a username and password (long term credentials), or access keys when using the CLI.
+2. Long term credentials must be explicitly changed.
+3. !! An IAM user has 1 username and 1 password, BUT...an IAM user can have two access keys.
+4. Access keys can be created, deleted, made inactive/active. When created they are defaulted to active.
+5. Access keys have two parts: Access Key ID, Secret Access Key
+    * The Secret Access Key must be copied the time it was created. AWS will not let you see it again.
+    * The Secret Access Key cannot be changed alone. The AK and SAK must be deleted and re-created.
+    * "Rotating Access Keys" means to delete existing set and make a new set.
+    * The Root User can have them, but it's not recommended.  Usually just for IAM entities. Not Roles.
