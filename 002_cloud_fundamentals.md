@@ -31,9 +31,7 @@
 ## Service Models
 1. Infractructure stack (IS). The IS is a collection of things that an application needs that stack on top of each other.
 
-
 | Application    | the application itself            |
-| -----------    | --------------------------------- |
 | Data           | creates or consumes               |
 | -----------    | --------------------------------- |
 | Runtime        | Python, Java, JS, C, C++, etc     |
@@ -50,3 +48,5 @@
 | -----------    | --------------------------------- |
 | Facilities     | bulding, power, physical security |
 | -----------    | --------------------------------- |
+
+2. Unit of consumption.
