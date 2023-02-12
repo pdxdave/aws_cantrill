@@ -30,22 +30,23 @@
 
 ## Service Models
 1. Infractructure stack (IS). The IS is a collection of things that application needs all stack on top of each other.
-| ------------   |
-| Application    |
-| -----------    |
-| Data           |
-| -----------    |
-| Runtime        |
-| -----------    |
-| Container      |
-| -----------    |  
-| OS             |
-| -----------    |
-| Virtualization |
-| -----------    |
-| Servers        |
-| -----------    |
-| Infrastructure |
-| -----------    |
-| Facilities     |
-| -----------    |
+
+
+| Application    | the application itself            |
+| -----------    | --------------------------------- |
+| Data           | creates or consumes               |
+| -----------    | --------------------------------- |
+| Runtime        | Python, Java, JS, C, C++, etc     |
+| -----------    | --------------------------------- |
+| Container      | Docker                            |
+| -----------    | --------------------------------- |
+| OS             | Linux, Windows                    |
+| -----------    | --------------------------------- |
+| Virtualization | severs running vm's               |
+| -----------    | --------------------------------- |
+| Servers        | 1 or more servers                 |
+| -----------    | ----------------------------------|
+| Infrastructure | storage, networking               |
+| -----------    | --------------------------------- |
+| Facilities     | bulding, power, physical security |
+| -----------    | --------------------------------- |
