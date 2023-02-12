@@ -14,7 +14,7 @@
 3. You could mirror the platforms.  If one fails the other takes over.
     * Will require a 3rd party tool, and it's possible two plaforms don't offer exactly the same services. A problem.
     * Better to have each platform handle different aspects rather than try to mirror them.
-4. ```AWS Outposts``` a Private Cloude On-Premisses.  Dedicated to a business and run on business premisses. 
+4. ```AWS Outposts``` a Private Cloude On-Premises.  Dedicated to a business and run on business premises. 
     * A private cloud still needs to meet the 5 characteristics. 
 5. Hybrid cloud is a public and private cloud working together.  Meets the 5 requirements.
     * It's not hybrid if you use AWS public with your on-site equipment.
@@ -22,3 +22,6 @@
 
 | Public Cloud | Private Cloud| Multi Cloud | Hybrid Cloud |
 | ------------ | ------------ | ------------| ------------ |
+| 1 public     | on-premises  |  using more |  public and  |
+|  cloud       |  real cloud  |     than 1  | private cloud|
+|              |              | public cloud|              |
