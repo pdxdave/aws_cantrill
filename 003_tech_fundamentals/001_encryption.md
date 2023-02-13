@@ -25,9 +25,14 @@
 ## Types of Encryption
 1. Symmetric encryption
     * two parties agree upon an encryption algorithm (AES-256).
-    * party A sends plaintext along w/a created symetric key. It goes to AES-256, it creates ciphertext, and that is forwarded to party B.
+    * party A sends plaintext along w/a created symmetric key. It goes to AES-256, it creates ciphertext, and that is forwarded to party B.
     * !problem. How does party B get the key safely? They can't.
     * This type of encryption is better for local file encryption.
 2. Asymmetric encryption
     * two parties agree upon an asymmetric algorithm to use, then create encryption keys for the algorithm.
-    * asym keys have a public and private key.
+    * asym keys have a public and private key. Both parties need public and private keys.
+    * the public key is for encryption, the private for decryption.
+    * party A d/l party B's public key. The public key and plaintext are sent to the algorithm which generates ciphertext.
+    * the ciphertext is sent to party B, and only they can decrypt the data. No key exchange required.
+    * party B sends the private key and ciphertext to the algorithm, it decrypts the plaintext and is sent back to party B.
+    * This is used b/t parties that don't need to see each other. Also SSH to access servers using key based authentication. 
