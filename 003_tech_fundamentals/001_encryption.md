@@ -18,5 +18,8 @@
 2. algorithm: takes plaintext & encryption key and writes encrypted data.
     * Blowfish, AES, RC4, DES, etc.
 3. key: a password.
-4. ciphertext: when an algorithm takes plaintext and a key it outputs ciphertext.
-** The upshot: 
+4. ciphertext: when an algorithm takes plaintext and a key it outputs ciphertext.    
+** Encryption: an algorithm takes plaintext and a key, and outputs ciphertext.
+** Decryption: an algorithm takes ciphertext and a key, and generates plaintext.
+
+## Types of Encryption
