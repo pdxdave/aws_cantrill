@@ -23,3 +23,11 @@
 ** Decryption: an algorithm takes ciphertext and a key, and generates plaintext.
 
 ## Types of Encryption
+1. Symmetric encryption
+    * two parties agree upon an encryption algorithm (AES-256).
+    * party A sends plaintext along w/a created symetric key. It goes to AES-256, it creates ciphertext, and that is forwarded to party B.
+    * !problem. How does party B get the key safely? They can't.
+    * This type of encryption is better for local file encryption.
+2. Asymmetric encryption
+    * two parties agree upon an asymmetric algorithm to use, then create encryption keys for the algorithm.
+    * asym keys have a public and private key.
