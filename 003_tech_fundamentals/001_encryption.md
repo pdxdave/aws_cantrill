@@ -44,3 +44,4 @@
 
 ## Steganography
 1. The problem with encryption is that one can tell that it has been used.
+2. Steganography follows Asymmetric keys, but the message is embedded within the existing code.  In short, it is hidden.
