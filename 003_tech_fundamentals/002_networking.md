@@ -1,6 +1,7 @@
 # Networking
 
 ## OSI 7 layer model
+| ---------------  |
 | 7 - Application  |
 | ---------------  |
 | 6 - Presentation |
@@ -10,6 +11,7 @@
 | 4 - Transport    | 
 | ---------------  |
 
+| ---------------  |
 | 3 - Networking   |
 | ---------------  |
 | 2 - Data Link    |
