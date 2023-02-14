@@ -28,4 +28,8 @@
 
 ## Layers
 ### 1 Physical
-asdf
+1. Two computers using NICs, connected by a shared physical medium (copper cable). This is a broadcast use case as there are no IP addresses. !Problem. If two devices transmit at the same time there could be a collision. There's no way to control access control, so collisions happen. Terrible scaling in layer 1 networks.    
+
+### 2. Data Link
+1. This runs over a functional layer 1. 
+2. Layer 2 uses MAC addresses and sends data in frames. Frames can be addressed to specific locations or broadcast.
