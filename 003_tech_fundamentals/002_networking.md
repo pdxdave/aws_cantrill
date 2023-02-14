@@ -38,9 +38,9 @@
 3. Every device on a network as a MAC address.  These are specific to the hardware (NIC), and are globally unique. 
 4. A layer 2 frame can be transmitted onto the shared physical medium in layer 1.  It's converted into voltage, RF, or light wave across the medium and received by other devices.
 
-| ---------------  | --------- |
+
 | Preamble         | destination Mac Address |
-| ---------------  | ----------- |
+
 5. Frames - multiple parts
     * the first is the preamble. it lets other devices know it's the start of the frames. 
     * next is the destination MAC address and source MAC address.
