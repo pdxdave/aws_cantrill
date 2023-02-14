@@ -2,8 +2,8 @@
 
 ## OSI 7 layer model
 |                  |
-| ---------------  | Host - How the data is chopped up, transported, and reassembeled. 
-| 7 - Application  web browser |
+| ---------------  |
+| 7 - Application  |
 | ---------------  |
 | 6 - Presentation |
 | ---------------  |
@@ -13,10 +13,17 @@
 | ---------------  |
 
 |                  |
-| ---------------  |  Media - How data is moved from point A to point B
+| ---------------  | 
 | 3 - Networking   |
 | ---------------  |
 | 2 - Data Link    |
 | ---------------  |
 | 1 - Physical     |
 | ---------------  |
+
+1. Layers 1 - 3 are the ```media layers```. This is how data moves from point A to point B.
+2. Layers 4 - 7 are the ```host layers```. This is how data is chopped up, readied for transport, and reassembled.
+    * At the top you may have a web browser connected to a server
+    * At the bottom you'll have network cards
+
+## Layers
