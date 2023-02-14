@@ -27,3 +27,5 @@
     * At the bottom you'll have network cards
 
 ## Layers
+### 1 Physical
+asdf
