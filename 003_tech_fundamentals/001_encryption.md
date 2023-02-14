@@ -19,7 +19,7 @@
     * Blowfish, AES, RC4, DES, etc.
 3. key: a password.
 4. ciphertext: when an algorithm takes plaintext and a key it outputs ciphertext.    
-** Encryption: an algorithm takes plaintext and a key, and outputs ciphertext.
+** Encryption: an algorithm takes plaintext and a key, and outputs ciphertext.     
 ** Decryption: an algorithm takes ciphertext and a key, and generates plaintext.
 
 ## Types of Encryption
@@ -36,3 +36,11 @@
     * the ciphertext is sent to party B, and only they can decrypt the data. No key exchange required.
     * party B sends the private key and ciphertext to the algorithm, it decrypts the plaintext and is sent back to party B.
     * This is used b/t parties that don't need to see each other. Also SSH to access servers using key based authentication. 
+
+## Signing: another use of Asymmetric keys
+1. Let's assume that the Asymmetric encryption was successful, but now party B wants to respond back to party A and confirm that they received the message.
+2. The problem. How do we know the response is from party B?  If party B has a public key available in the cloud then anyone could get it and respond to party A.
+3. Party B could create a message and sign it with their private key and send the message to Party A. Party A uses Party B's public key and verifies it using Party B's private key attached to the message. This is the inverse of the process above.
+
+## Steganography
+1. The problem with encryption is that one can tell that it has been used.
