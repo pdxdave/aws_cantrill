@@ -52,6 +52,6 @@
 ### Data Like Part Two
 1. Assume we have two computers with known NIC addresses between them  
 2. Comp A packages up a frame of data. Before sending it checks for a carrier signal on the network, via CSMA (Carrier Sense Multiple Access). If none is detected, it passes the frame to layer 1.
-![network_01](./assets/network_1.png)
+![network_01](assets/network_1.png)
 
     
