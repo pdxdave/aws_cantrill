@@ -35,14 +35,16 @@
 ### 2. Data Link
 1. This runs over layer 1. 
 2. Layer 2 introduces frames. A framework for sending data over a layer 2 network.
-3. Every device on a network as a MAC address.  These are specific to the hardware (NIC), and are globally unique. 
+3. Every device on a network has a MAC address.  These are specific to the hardware (NIC), and are globally unique. 
 4. A layer 2 frame can be transmitted onto the shared physical medium in layer 1.  It's converted into voltage, RF, or light wave across the medium and received by other devices.
 
      
-| 1 Preamble | 2 destination Mac Address | 3 source Mac Address | 4 ET 16 bits | 5 Payload 46 - 15000 bytes |
+| 1 Preamble | 2 destination Mac Address | 3 source Mac Address | 4 ET 16 bits | 5 Payload 46 - 15000 bytes | // | check |
 
 5. Frames - multiple parts
-    * the first is the preamble. It lets other devices know it's the start of the frames. 
-    * next is the destination MAC address and source MAC address.
-    * next is the ether type. this specifies which layer 3 protocal is putting its data inside a frame.  Layer 3 uses layer 2 frames for device-to-device communication.
-    * parts 2, 3 and 4 are the "Mac Header".
+    * 1 is the preamble. It lets other devices know it's the start of the frames. 
+    * 2 & 3 are the destination/source MAC address. the packet can be sent to a specific MAC address, or ff:ff:ff if for a global destination. 
+    * 4 is the EtherType. This is SUPER FUCKING important. The EtherType decides which layer 3 protocal (e.g., IP) is putting its data inside a frame.
+    * parts 2, 3 and 4 are the ```Mac Header```. They indicate the destination, source, and ET. 
+    * part 5 is the payload. The ET (EtherType) defines which L3 protocal it uses (e.g., IP). This process is called encapsulation.  The payload is put into the Eathernet frame & delivered to a different layer 2 destination (e.g., another computer), analyized, the layer 3 packet is extracted and given back to layer 3 at the destination side.
+    * At the end is the check sequence to make sure no errors occured.
