@@ -38,9 +38,11 @@
 3. Every device on a network as a MAC address.  These are specific to the hardware (NIC), and are globally unique. 
 4. A layer 2 frame can be transmitted onto the shared physical medium in layer 1.  It's converted into voltage, RF, or light wave across the medium and received by other devices.
 
-
-| Preamble         | destination Mac Address |
+     
+| 1 Preamble | 2 destination Mac Address | 3 source Mac Address | 4 ET 16 bits | 5 Payload 46 - 15000 bytes |
 
 5. Frames - multiple parts
-    * the first is the preamble. it lets other devices know it's the start of the frames. 
+    * the first is the preamble. It lets other devices know it's the start of the frames. 
     * next is the destination MAC address and source MAC address.
+    * next is the ether type. this specifies which layer 3 protocal is putting its data inside a frame.  Layer 3 uses layer 2 frames for device-to-device communication.
+    * parts 2, 3 and 4 are the "Mac Header".
