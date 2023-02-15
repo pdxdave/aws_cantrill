@@ -48,3 +48,10 @@
     * parts 2, 3 and 4 are the ```Mac Header```. They indicate the destination, source, and ET. 
     * part 5 is the payload. The ET (EtherType) defines which L3 protocal it uses (e.g., IP). This process is called encapsulation.  The payload is put into the Eathernet frame & delivered to a different layer 2 destination (e.g., another computer), analyized, the layer 3 packet is extracted and given back to layer 3 at the destination side.
     * At the end is the check sequence to make sure no errors occured.
+
+### Data Like Part Two
+1. Assume we have two computers with known NIC addresses between them  
+2. Comp A packages up a frame of data. Before sending it checks for a carrier signal on the network, via CSMA (Carrier Sense Multiple Access). If none is detected, it passes the frame to layer 1.
+![network_01](/assets/network_1.png)
+
+    
