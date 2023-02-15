@@ -53,5 +53,8 @@
 1. Assume we have two computers with known NIC addresses between them  
 2. Comp A packages up a frame of data. Before sending it checks for a carrier signal on the network, via CSMA (Carrier Sense Multiple Access). If none is detected, it passes the frame to layer 1.
 ![network_01](../assets/network_01.png)
+3. The raw data is converted to 1s and 0s in layer 1 and then goes to Comp B where it reviews the destination mac address
+4. What if Comp B wants to send at the same time?  To avoid a collision it looks for ```carrier dectected```. If one is, it waits.
+![network_02](../assets/network_02.png)
 
     
