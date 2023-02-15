@@ -56,5 +56,7 @@
 3. The raw data is converted to 1s and 0s in layer 1 and then goes to Comp B where it reviews the destination mac address
 4. What if Comp B wants to send at the same time?  To avoid a collision it looks for ```carrier dectected```. If one is, it waits.
 ![network_02](../assets/network_02.png)
-
+5. What if both sides don't detect traffic then send at the same time? A collision could accure and that's what collision detection is for. This is part of layer 2.  A collision is detected, a jam signal is sent by all the devices that detect it, and a ```random backoff``` occurs. No device will attempt a transmission.
+![network_03](../assets/network_03.png)
+6. Hubs behave like layer 1. They don't detect collisions. 
     
