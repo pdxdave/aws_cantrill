@@ -58,5 +58,5 @@
 ![network_02](../assets/network_02.png)
 5. What if both sides don't detect traffic then send at the same time? A collision could accure and that's what collision detection is for. This is part of layer 2.  A collision is detected, a jam signal is sent by all the devices that detect it, and a ```random backoff``` occurs. No device will attempt a transmission.
 ![network_03](../assets/network_03.png)
-6. Hubs behave like layer 1. They don't detect collisions. A switch is a layer 2 device, so should help. They understand MAC addresses and have a MAC address table which starts off empty.  It learns which devices are connected and populates the Mac address table.
+6. Hubs behave like layer 1. They don't detect collisions. A switch is a layer 2 device, so should help. They understand MAC addresses and have a MAC address table which starts off empty.  It learns which devices are connected and populates the Mac address table.  Switches store and forward the frame.  It means only valid frames are forwarded.  Switches can be connected and scale.
     
