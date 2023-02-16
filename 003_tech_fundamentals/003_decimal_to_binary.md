@@ -26,5 +26,7 @@ Next is binary position 2 greater than decimal 1?  It is, so we put a ```0``` in
 And lastly, the decimal is equal to our binary position value, so the binary value gets a ```1```     
 Add the binary values together (126, 4, 1) and you get 133. 
 
+| results               | 1    |  2  |  3  |  4  | 
+| ------                 | --   | --  | --  | --  |
 | decimal     | 133        |  33  |  33  |  7  |   
 | binary      | 10000101   | 00100001  | 00100001  | 00000111 | 
