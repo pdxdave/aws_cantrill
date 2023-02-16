@@ -41,4 +41,6 @@ Starting binary number: 10000101.0010001.00100001.00000111
 | binary value           | 1    |  0  |  0  |  0  |  0  |  1  |  0 |  1 |  
 | ------                 | --   | --  | --  | --  | --  | --  | -- | -- |    
 | binary position value  | 128  |  64 |  32 |  16 |  8  |  4  |  2 |  1 | 
-| decimal value          | 128  |  0  |  0  |  0  |  0  |  4  |  0 |  1 |  = 133
+| decimal value          | 128  |  0  |  0  |  0  |  0  |  4  |  0 |  1 | 
+
+Add the decimal values: 133
