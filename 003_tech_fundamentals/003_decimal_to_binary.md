@@ -16,4 +16,7 @@ Each number between the dots has a value between 0-255.
 
 A walk through.     
 The first decimal is 133.  It is larger than 128, so we put a ```1``` in the first position.       
-Now we subtract 128 from 133 which gives us our new decimal of 5.
+Now we subtract 128 from 133 which gives us our ```new decimal of 5```.   
+
+Now we go to position 2.  We ask, "is 5 less than 64?"  It is, so we put a ```0``` in the binary value and move to the right.    
+
