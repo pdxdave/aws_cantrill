@@ -15,3 +15,5 @@
 
 
 ## Packets
+1. Packets are similar to frames. They contain some data to be moved and they have a source/destination address.
+2. The diff is that packet source/destination addresses could be on the opposit sides of the planet.
