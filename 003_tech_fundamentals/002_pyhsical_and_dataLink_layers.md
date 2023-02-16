@@ -27,12 +27,12 @@
     * At the bottom you'll have network cards
 
 ## Layers
-### 1 Physical
+### Physical - Layer 1
 1. This is about voltage levels, distances, modulation and connectors. Imagine two computers connected with a LAN line, the physical shared medium.
 2. This is how two NICs (that share the same standards) communicate at layer 1.
 3. The problem with layer 1: errors and collisions. Why? Because the traffic is broadcasted. It would be like several people yelling at the same time.  There's no device addressing. 
 
-### 2. Data Link
+### Data Link - Layer 2
 1. This runs over layer 1. 
 2. Layer 2 introduces frames. A framework for sending data over a layer 2 network.
 3. Every device on a network has a MAC address.  These are specific to the hardware (NIC), and are globally unique. 
