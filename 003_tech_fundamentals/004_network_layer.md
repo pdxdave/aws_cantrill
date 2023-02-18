@@ -17,3 +17,8 @@
 ## Packets
 1. Packets are similar to frames. They contain some data to be moved and they have a source/destination address.
 2. The diff is that packet source/destination addresses could be on the opposit sides of the planet.
+3. Packets remain the same during their journey. As they move along layer 2 networks they are placed inside frames (encapsulation).
+4. The frame is specific to the local network the packet is moving through and changes everytime the packet moves between neworks.  The packet itself doesn't normally change.
+
+|  IPV4   |  IPV6 |
+| ------- | ----- |

@@ -28,9 +28,11 @@
 
 ## Layers
 ### Physical - Layer 1
-1. This is about voltage levels, distances, modulation and connectors. Imagine two computers connected with a LAN line, the physical shared medium.
+1. This is about voltage levels, distances, modulation and connectors. Imagine two computers connected with a (copper) LAN line, the physical shared medium. It can also be fibre or wifi.
 2. This is how two NICs (that share the same standards) communicate at layer 1.
-3. The problem with layer 1: errors and collisions. Why? Because the traffic is broadcasted. It would be like several people yelling at the same time.  There's no device addressing. 
+3. Looking ahead, layer 1 only has layer 1 capability whereas layer 2 has layer 1 and 2, and...layer 3 has layers 1, 2, and 3 capability.
+4. Hubs are layer 1 devices. 
+5. The problem with layer 1: errors and collisions. Why? Because the traffic is broadcasted. It would be like several people yelling at the same time.  There's no device addressing. 
 
 ### Data Link - Layer 2
 1. This runs over layer 1. 
