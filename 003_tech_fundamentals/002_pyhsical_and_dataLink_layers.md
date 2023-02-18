@@ -27,31 +27,32 @@
     * At the bottom you'll have network cards
 
 ## Layers
+
 ### Physical - Layer 1
 1. This is about voltage levels, distances, modulation and connectors. Imagine two computers connected with a (copper) LAN line, the physical shared medium. It can also be fibre or wifi.
 2. This is how two NICs (that share the same standards) communicate at layer 1.
 3. Looking ahead, layer 1 only has layer 1 capability whereas layer 2 has layer 1 and 2, and...layer 3 has layers 1, 2, and 3 capability.
 4. Hubs are layer 1 devices. 
-5. The problem with layer 1: errors and collisions. Why? Because the traffic is broadcasted. It would be like several people yelling at the same time.  There's no device addressing. 
+5. The problem with layer 1: errors and collisions. Why? Because the traffic is broadcasted. It would be like several people yelling at the same time.  Only one device can communicate at a time. There's no device addressing. 
 
 ### Data Link - Layer 2
-1. This runs over layer 1. 
-2. Layer 2 introduces frames. A framework for sending data over a layer 2 network.
+1. This runs over layer 1 networks: copper, fibre, wifi, etc.
+2. Layer 2 introduces frames and MAC addresses. A frame is for sending data over a layer 2 network. 
 3. Every device on a network has a MAC address.  These are specific to the hardware (NIC), and are globally unique. 
 4. A layer 2 frame can be transmitted onto the shared physical medium in layer 1.  It's converted into voltage, RF, or light wave across the medium and received by other devices.
 
      
 | 1 Preamble | 2 destination Mac Address | 3 source Mac Address | 4 ET 16 bits | 5 Payload 46 - 15000 bytes | // | check |
 
-5. Frames - multiple parts
+5. Frame - multiple parts - this is what Layer 2 uses for communication
     * 1 is the preamble. It lets other devices know it's the start of the frames. 
-    * 2 & 3 are the destination/source MAC address. the packet can be sent to a specific MAC address, or ff:ff:ff if for a global destination. 
-    * 4 is the EtherType. This is SUPER FUCKING important. The EtherType decides which layer 3 protocal (e.g., IP) is putting its data inside a frame.
-    * parts 2, 3 and 4 are the ```Mac Header```. They indicate the destination, source, and ET. 
-    * part 5 is the payload. The ET (EtherType) defines which L3 protocal it uses (e.g., IP). This process is called encapsulation.  The payload is put into the Eathernet frame & delivered to a different layer 2 destination (e.g., another computer), analyized, the layer 3 packet is extracted and given back to layer 3 at the destination side.
+    * 2 & 3 are the destination/source MAC address. The packet can be sent to a specific MAC address, or ff:ff:ff for a global destination. 
+    * 4 is the EtherType. This is SUPER FUCKING important. The EtherType decides which layer 3 protocal (e.g., IP) is putting itselft inside a frame. Layer 3 uses layer 2 frames for device to device communication on a local network. You need to know which layer 3 protocal originally put data into that frame.
+    * Parts 2, 3 and 4 are the ```Mac Header```. They indicate the destination, source, and ET. 
+    * Part 5 is the payload. The payload is the data the frame carries from source to destination. It's generally provided by Layer 3, and the ET defines which L3 protocol is used; for instance, IP.
     * At the end is the check sequence to make sure no errors occured.
 
-### Data Like Part Two
+### Data Link Part Two
 1. Assume we have two computers with known NIC addresses between them  
 2. Comp A packages up a frame of data. Before sending it checks for a carrier signal on the network, via CSMA (Carrier Sense Multiple Access). If none is detected, it passes the frame to layer 1.
 ![network_01](../assets/network_01.png)
