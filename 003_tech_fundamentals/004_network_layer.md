@@ -10,17 +10,22 @@
 5. The importance of L2 -> ```Layer 2 moves frames from a local source to a local destination```
 6. The importances of L3 -> ```Layer 3 is a common protocal that span multiple different layer 2 networks.``` 
 ![network_05](../assets/network_05.png)
-8. Layer 3 adds the Internet Protocol: cross networking IP addressing and routing.
+7. L3 can be added to one or more L2 networks.
+8. L3 adds the Internet Protocol: IP addresses you can assign to devices for communicating across networks using routing.
 9. IP packets are moved from source to destination across the Internet through many intermediate networks. 
-10. Routers (layer 3) move packets of data across different networks.  They ecapsulate a packet inside of an ethernet frame for that part of the journey over that local network.
+10. Routers (L3 devices) move packets of data across different networks.  They ecapsulate a packet inside of an ethernet frame for that part of the journey over that local network.
 11. Ecapsulation just means that an IP packet is put inside an ethernet frame for that part of the journey.  When it needs to be moved into an new network that particular frame is removed and a new one is added around the same packet and it's moved onto the next local network.
 
 
-## Packets
+## Packets - The data unit used within the IP
 1. Packets are similar to frames. They contain some data to be moved and they have a source/destination address.
-2. The diff is that packet source/destination addresses could be on the opposit sides of the planet.
+2. The diff is that packet source/destination addresses could be on the opposite sides of the planet, not local.
 3. Packets remain the same during their journey. As they move along layer 2 networks they are placed inside frames (encapsulation).
-4. The frame is specific to the local network the packet is moving through and changes everytime the packet moves between neworks.  The packet itself doesn't normally change.
+4. The frame is specific to the local network the packet is moving through and changes everytime the packet moves between networks.  The packet itself doesn't normally change.
 
-|  IPV4   |  IPV6 |
-| ------- | ----- |
+## Two versions of the Internet Protocol. Packet Structure
+
+|  IPV4                             |  IPV6 |
+| ----------------------------      | ----- |
+| Protocol (ICMP, TCP, UDP from L4) | ----- |
+| source/destinaton IP Address      | ----- |
