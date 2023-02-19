@@ -2,8 +2,8 @@
 
 ## Two Separate LANs
 
-1. L3 needs one or more operational L2 networks to function.
-2. It's role is to get data from one location to another.
+1. L3 needs one or more operational L2 networks to function.    
+2. Its role is to get data from one location to another.    
 ![network_04](../assets/network_04.png)
 
 
