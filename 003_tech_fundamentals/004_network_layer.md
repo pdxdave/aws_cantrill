@@ -8,9 +8,8 @@
 3. We have separate LANs. One on the east coast, one on the west coast, and some inbetween.
 4. They use ```different layer 2 protocols```.  LANs often use ethernet, but long distance points may use PPP/MPLS/ATM.
 5. Not all of them use frames with the same format.
-6. ```Layer 3 can span multiple different layer 2 networks.```
+6. The importances of L3 -> ```Layer 3 can span multiple different layer 2 networks.``` 
 ![network_05](../assets/network_05.png)
-7. To move data between different local networks, we need layer 3 which can span multiple layer 2 networks.
 8. Layer 3 adds the Internet Protocol: cross networking IP addressing and routing.
 9. IP packets are moved from source to destination across the Internet through many intermediate networks. 
 10. Routers (layer 3) move packets of data across different networks.  They ecapsulate a packet inside of an ethernet frame for that part of the journey over that local network.
