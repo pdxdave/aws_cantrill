@@ -27,5 +27,6 @@
 
 |  IPV4                             |  IPV6 |
 | ----------------------------      | ----- |
-| Protocol (ICMP, TCP, UDP from L4) | ----- |
+| Time To Live (aka TTL), Protocol (ICMP, TCP, UDP from L4) | ----- |
 | source/destinaton IP Address      | ----- |
+| Data from L4                      | ----- |
