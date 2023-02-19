@@ -5,8 +5,6 @@
 1. L3 needs one or more operational L2 networks to function.
 2. Its role is to get data from one location to another.
 ![network_04](../assets/network_04.png)
-
-
 3. We have separate LANs. One on the east coast, one on the west coast, and some inbetween.
 4. They use ```different layer 2 protocols```.  LANs often use ethernet, but long distance points may use PPP/MPLS/ATM.
 5. Not all of them use frames with the same format.
