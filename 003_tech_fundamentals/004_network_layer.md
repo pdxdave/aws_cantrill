@@ -29,4 +29,10 @@
 | ----------------------------      | 
 | Time To Live (aka TTL), Protocol (ICMP, TCP, UDP from L4) | 
 | source/destinaton IP Address      | 
-| Data from L4                      |
+| Data from L4                      |    
+
+|  IPV6                             | 
+| ----------------------------      | 
+| Time To Live (aka TTL), Protocol (ICMP, TCP, UDP from L4) | 
+| source/destinaton IP Address      | 
+| Data from L4                      |   
