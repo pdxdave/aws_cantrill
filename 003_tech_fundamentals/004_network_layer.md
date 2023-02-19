@@ -25,14 +25,4 @@
 
 ## Two versions of the Internet Protocol. Packet Structure
 
-|  IPV4     | | |                   | 
-| ----------------------------      | 
-| Time To Live (aka TTL), Protocol (ICMP, TCP, UDP from L4) | 
-| source/destinaton IP Address      | 
-| Data from L4                      |    
-
-|  IPV6                             | 
-| ----------------------------      | 
-| Time To Live (aka TTL), Protocol (ICMP, TCP, UDP from L4) | 
-| source/destinaton IP Address (bigger so more addresses)   | 
-| Data from L4                      |   
+ ![network_06](../assets/network_06.png)
