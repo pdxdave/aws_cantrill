@@ -25,9 +25,8 @@
 
 ## Two versions of the Internet Protocol. Packet Structure
 
-|  IPV4                             | 
+|  IPV4     | | |                   | 
 | ----------------------------      | 
-| |version | header length | type of service | total length| |
 | Time To Live (aka TTL), Protocol (ICMP, TCP, UDP from L4) | 
 | source/destinaton IP Address      | 
 | Data from L4                      |    
