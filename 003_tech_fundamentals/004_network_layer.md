@@ -54,7 +54,10 @@
 
  | Subnet | 255.255.0.0 |
  | ---------  | ---------- |
- | binary | 11111111 11111111 00000000 00000000 |
+ | binary | 11111111 11111111 00000000 00000000 |    
+
+ * /16 is the same as saying sixteen 1's
+ * !When the subnet mask is in binary, anything with 1 represents the network, anything with 0's is the host computer. 
  
 
 
