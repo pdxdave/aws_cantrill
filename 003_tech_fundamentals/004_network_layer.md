@@ -37,9 +37,6 @@
 
 
  ## IP Addressing - v4
+ ![network_07](../assets/network_07.png)
 
- | dotted decimal notation IP address 0 - 255|
- | ----------------------- | ---------------- |
- | network part |   host part  |
- | 133.33       |   3.7  |
     
