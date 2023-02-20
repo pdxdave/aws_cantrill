@@ -42,9 +42,16 @@
 
 
  ## Subnet Mask
- * Subnet masks help us to determine if devices on our network are local or remote.
+ * Subnet masks help us to determine if devices on our network are local or remote. It is configured on a host device in addition to an IP address. e.g., 255.255.0.0
  * They are configured on L3 interfaces along with IP addresses. 
  * A default gateway is also configured on most interfaces.  This is an IP address on the local network which packets are forwarded to generally if the intended destination is not a local IP address.
- * Subnet masks are what allow an IP to know if an IP address it needs to communicate with is on the same network or not.
+ * Subnet masks are what allow an IP to know if an IP address it needs to communicate with is on the same network or not. This influences if a device attempts to communicate directly on the local network or if it needs to use the default gateway.
+ * Default Gateway Example: My Internet router is my default gateway.  When I go to Netflex or interact with AWS, because the IP addresses I'm interacting with are not local, then packets from my computer are passed to the router/default gateway.
+
+ | IP address | 133.33.3.7 |
+ | binary | 10000101.0100001.00000011.00000111 |
+
+
+
 
     
