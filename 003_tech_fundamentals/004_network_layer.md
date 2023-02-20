@@ -38,5 +38,13 @@
 
  ## IP Addressing - v4
  ![network_07](../assets/network_07.png)
+ * If the network component of the two IP addresses match, the devices are local.  If not, they are remote.
+
+
+ ## Subnet Mask
+ * Subnet masks help us to determine if devices on our network are local or remote.
+ * They are configured on L3 interfaces along with IP addresses. 
+ * A default gateway is also configured on most interfaces.  This is an IP address on the local network which packets are forwarded to generally if the intended destination is not a local IP address.
+ * Subnet masks are what allow an IP to know if an IP address it needs to communicate with is on the same network or not.
 
     
