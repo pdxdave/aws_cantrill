@@ -26,3 +26,19 @@
 ## Two versions of the Internet Protocol. Packet Structure
 
  ![network_06](../assets/network_06.png)
+ 1. v4
+ * The v4 protocol. The IP is L3 and it contains data provided by a L4 protocol. It stores which protocol is used.  Examples would be like ICMP (value 1), TCP (value 6), UDP (value 17). This L3 layer will know which L4 protocol to pass the data into.
+ * The data is provided by a L4 protocol.
+ * TTL or Time To Live. This defines the max number of hops a packet can take to get to its destination.  If it exceeds them, it can be discarded. 
+ * A single packet may exist in several frames throughout its route to get to its destination.  One for every L2 point to point link.    
+
+ 2. v5
+ * Hop Limit is like Time To Live
+
+
+ ## IP Addressing - v4
+
+ | dotted decimal notation IP address 0 - 255|
+ | network part |   host  |
+ | 133.33       |   3.7  |
+    
