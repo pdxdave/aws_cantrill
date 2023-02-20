@@ -39,7 +39,7 @@
  ## IP Addressing - v4
 
  | dotted decimal notation IP address 0 - 255|
- | ----------------------- |
- | network part |   host  |
+ | ----------------------- | ---------------- |
+ | network part |   host part  |
  | 133.33       |   3.7  |
     
