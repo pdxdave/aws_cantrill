@@ -49,6 +49,7 @@
  * Default Gateway Example: My Internet router is my default gateway.  When I go to Netflex or interact with AWS, because the IP addresses I'm interacting with are not local, then packets from my computer are passed to the router/default gateway.
 
  | IP address | 133.33.3.7 |
+ | ---------  | ---------- |
  | binary | 10000101.0100001.00000011.00000111 |
 
 
