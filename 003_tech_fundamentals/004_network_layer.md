@@ -52,8 +52,8 @@
  | ---------  | ---------- |
  | binary | 10000101 00100001 00000011 00000111 |
 
- | Subnet   | 255.255.0.0 |
- | ---------  | ---------- |
+ | Subnet ---   | 255.255.0.0 |
+ | ---------    | ---------- |
  | binary | 11111111 11111111 00000000 00000000 |    
 
  * /16 is the same as saying sixteen 1's.  It means the first two octets are the network.
