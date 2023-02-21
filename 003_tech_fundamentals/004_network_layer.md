@@ -59,10 +59,12 @@
  * /16 is the same as saying sixteen 1's.  It means the first two octets are the network.
  * When the subnet mask is in binary, anything with 1 represents the network, anything with 0's is the host computer. 
  
-* In this example the start of the network is 133.33.0.0
+* In this example the ```start``` of the network is ```133.33.0.0```.  Why? The first two octets of the subnet are all 1's. The last two octects are all 0's. 
+* The end is 133.33.255.255.  Why? The last two subnet octets don't have 1s in it. This leaves the ranges for the last to octets to have ranges up to 255.  So the range is from 133.33.0.0 to 133.33.255.255
 
+## Route Tables & Routes
 
-
+![network_08](../assets/network_08.png)
 
 
 
