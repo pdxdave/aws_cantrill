@@ -66,6 +66,11 @@
 
 ![network_08](../assets/network_08.png)
 
+* The route that is selected, the top one, has a next route or target field.  It has the IP address the packet is to be forwarded to.  The packet is forwarded to 52.217.13.0/24. Routing is the process by which packets hop across the internet from source to destination.  Route tables enable this.
+* !important. When the ISP router is forwarding the packet through to the AWS router, it is forwarding it at L2. It wraps the packet in a frame. It doesn't change.  The frame though as the AWS Mac Address as its destination.  That's how the packet gets to the AWS router.  How do we determine the Mac Address of the AWS router? That would be through the ```address resolution protocol```.
 
+## Address Resolution Protocol
 
-    
+1. This is generally used when you have a L3 packet and you want to encapsolate it inside a frame and then send that frame to a Mac Address.  You don't initially know the Mac Address and you need a protocol that can find the Mac Address for a given IP address. 
+2. ARP will give you the Mac Address for a given IP address.
+![network_09](../assets/network_09.png)
