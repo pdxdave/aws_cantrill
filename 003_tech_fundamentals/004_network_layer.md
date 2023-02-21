@@ -32,7 +32,7 @@
  * TTL or Time To Live. This defines the max number of hops a packet can take to get to its destination.  If it exceeds them, it can be discarded. 
  * A single packet may exist in several frames throughout its route to get to its destination.  One for every L2 point to point link.    
 
- 2. v5
+ 2. v6
  * Hop Limit is like Time To Live
 
 
@@ -42,7 +42,7 @@
 
 
  ## Subnet Mask
- * Subnet masks help us to determine if devices on our network are local or remote. It is configured on a host device in addition to an IP address. e.g., 255.255.0.0
+ * It's the subnet mask which allows a HOST to determine if an IP address it needs to commicate with is local or remote - which influences if it needs to use a gateway or can communicate locally.
  * They are configured on L3 interfaces along with IP addresses. 
  * A default gateway is also configured on most interfaces.  This is an IP address on the local network which packets are forwarded to generally if the intended destination is not a local IP address.
  * Subnet masks are what allow an IP to know if an IP address it needs to communicate with is on the same network or not. This influences if a device attempts to communicate directly on the local network or if it needs to use the default gateway.
@@ -52,13 +52,15 @@
  | ---------  | ---------- |
  | binary | 10000101 00100001 00000011 00000111 |
 
- | Subnet | 255.255.0.0 |
+ | Subnet   | 255.255.0.0 |
  | ---------  | ---------- |
  | binary | 11111111 11111111 00000000 00000000 |    
 
- * /16 is the same as saying sixteen 1's
- * !When the subnet mask is in binary, anything with 1 represents the network, anything with 0's is the host computer. 
+ * /16 is the same as saying sixteen 1's.  It means the first two octets are the network.
+ * When the subnet mask is in binary, anything with 1 represents the network, anything with 0's is the host computer. 
  
+* In this example the start of the network is 133.33.0.0
+
 
 
 
