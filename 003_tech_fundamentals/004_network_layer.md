@@ -85,6 +85,7 @@
     * It now sends it off as the next hop to router R2.  R2 accepts the frame and removes the frame around P2.
     * R2 confirms the destination IP address of P2 is on the same network and uses ARP to get the mac address of D3. It then encapsulates the packet P2 in a new frame F4, whose destination mac address is that of D3.
     * D3 receives the frame, it sees it is the intended destination of the frame (the mac addresses match), it strips off the frame, it strips off the packet and the data inside is available. 
+![network_13](../assets/network_13.png)
 
 ## L3 review
 ![network_10](../assets/network_10.png)
