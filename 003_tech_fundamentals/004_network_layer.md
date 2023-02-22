@@ -74,3 +74,17 @@
 1. This is generally used when you have a L3 packet and you want to encapsolate it inside a frame and then send that frame to a Mac Address.  You don't initially know the Mac Address and you need a protocol that can find the Mac Address for a given IP address. 
 2. ARP will give you the Mac Address for a given IP address.
 ![network_09](../assets/network_09.png)
+
+### An example NOT using a local network
+1. D2 uses the subnet mask to compare its IP address to the destination address to learn that D3 is not on the same network.
+    * It then creates a packet P2, which has the D3 destination IP address. It wraps it up in a frame called F2. Because D3 is remote, it knows that it has to use the default gateway as a router.  So for the destination mac address of F2, it uses the ARP to get the mac address of the local router R1.
+    * So the packet P2 is addressed to the laptop D3.  The frame F2 is now addressed to the router R1.
+    * R1 will see that the mac address is addressed to itself, so it will strip away the frame just leaving the packet P2.
+    * R1 reviews the destination of packet P2, it sees that it's destined for laptop D3. R1 has a route for D3 in its route table. It knows anything for the pink network, router R2 should be the next hop.
+    * It takes packet P2 and encapsulates it in a new frame F3.  The destination mac address of this frame is the router R2, and gets it using ARP.
+    * It now sends it off as the next hop to router R2.  R2 accepts the frame and removes the frame around P2.
+    * R2 confirms the destination IP address of P2 is on the same network and uses ARP to get the mac address of D3. It then encapsulates the packet P2 in a new frame F4, whose destination mac address is that of D3.
+    * D3 receives the frame, it sees it is the intended destination of the frame (the mac addresses match), it strips off the frame, it strips off the packet and the data inside is available. 
+
+## L3 review
+![network_10](../assets/network_10.png)
