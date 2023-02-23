@@ -37,8 +37,11 @@ The Session layer runs on top of the transport layer and many of the features we
 12. All of these fields are known as the ```TCP Header```.
 
 ### TCP Part 2
-1. TCP like IP is use to allow communications between two devices.
+1. TCP like IP is used to allow communications between two devices.
 2. TCP is connection based.  It provides a connection architecture between two devices: client and server. Once established the connection provides what's seen as a reliable communication channel between the client and the server which is used to exhange data. The ephemeral port is temporary.  The well known port is permanent. 
 3. The communication will still use packets at L3.  Again, at L3 there is no association between packets, no ordering, no error checking and they are isolated.
 4. L4 takes data provided to it and chops that data up into segments linked to a connection, error checking, ordering and retransmission and puts them into the IP packets.
 ![network_14](../assets/network_14.png)
+5. It's important to keep in mind that L4 will have two source/destination ports.  One for each direction of the communication. 
+6. Back to ```Flags n things```.  
+![network_15](../assets/network_15.png)
