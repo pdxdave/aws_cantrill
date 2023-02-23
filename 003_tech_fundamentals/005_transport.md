@@ -23,14 +23,17 @@ The Session layer runs on top of the transport layer and many of the features we
 ## More about TCP
 ![network_12](../assets/network_12.png)
 1. TCP introduces segments. Segments are another container for data like packets and frames. 
-2. Segments are encapsulated w/in IP packets.
+2. Segments are specific to TCP. They are encapsulated (inside) packets.
 3. TCP segments are placed inside packets. Packets carry the segments from their source to destination.
     * Segments don't have source or desgination IP addresses. L3 handles that.
-4. TCP adds ```source``` and ```destination``` ports. This gives the TCP/IP protocol the ability to have multiple conversations at the same time between two devices. For instance, port 443. Because of ports you can have multiple streams of communcation from your machine.
-    * Source and Destination are why the internet can function the way it does. It's why SSH and EC2 can exist on the same instance, why you can have mult SSH connections open to the same EC2 instance.
+4. TCP adds ```source``` and ```destination``` ports. This gives the TCP/IP protocol the ability to have multiple streams of conversations at the same time between two devices. For instance, port 443. Because of ports you can have multiple streams of communcation from your machine: AWS, Netflix, and this video series.
+    * Source port and Destination port are why the internet can function the way it does. It's why SSH and EC2 can exist on the same instance, why you can have mult SSH connections open to the same EC2 instance.
 6. Sequence Number. It is incremented with each segment sent. It's unique and can be used for error correction if things need to be re-transmitted. It can be used to ensure when IP packets are received and the TCP segments are pulled out they can be correctly ordered. The sequencing allows both sides to make observations about it.
-7. The way observations are done is through ```acknowledgment```. It's a way one side can indicate it received up to and including a certain sequence number. Every segment transmitted needs to be acknowledged.
-8. Flags 'n things.  In an segment there is a flags component which is 9 bits and this allows various controls over a TCP segment. Flags are used to close the connection or synchronize sequence numbers.  
-9. ```Window```.  It defines the number of bites you indicate you are willing to receive between acknowledgements. Once reach, the sender will pause until you acknowledge that about of data.  This is how flow control is implemented.  It lets the receiver control the rate at which the sender sends data. If you use small windows it provides additional levels of control over how quickly you send data.  Larger windows are more effecient b/c the header of a TCP segment takes up an amount of space and the smaller the window the more headers are involved.
-10. ```Checksum```. Used for error checking. Can arrange for re-transmitting data as required.
-11. ```Urgent Pointer``` Used with data transfer applications where 99% of data is the data being transfered and 1% is controls traffic. Communication between the client and the server are coordinating the transfer.  Both sides can have separate processing so the control traffic always take priority w/in the communication: FTP and Telnet.
+7. The way observations are done is through ```acknowledgment```. It's a way one side can indicate it received up to and including a certain sequence number. Every segment transmitted needs to be acknowledged on both sides. ```Sequence Number and Acknowledgment``` work hand in hand.
+8. ```Flags 'n things```.  In an segment there is a flags component which is 9 bits and this allows various controls over a TCP segment. Flags are used to close the connection or synchronize sequence numbers.  
+9. ```Window```.  It defines the number of bites you indicate you are willing to receive between acknowledgements. Once reached, the sender will pause until you acknowledge that amout of data.  This is how flow control is implemented.  It lets the receiver control the rate at which the sender sends data. If you use small windows it provides additional levels of control over how quickly you send data.  Larger windows are more effecient b/c the header of a TCP segment takes up an amount of space and the smaller the window the more headers are involved.
+10. ```Checksum```. Used for error checking. It means the TCP layer can detect errors and arrange for re-transmitting data as required.
+11. ```Urgent Pointer``` Used with data transfer applications where 99% of data is the data being transfered and 1% is controls traffic. Communication between the client and the server are coordinating the transfer.  Both sides can have separate processing so the control traffic always take priority w/in the communication: latency applications such as FTP and Telnet can use this field.
+12. All of these fields are known as the ```TCP Header```.
+
+### TCP Part 2
