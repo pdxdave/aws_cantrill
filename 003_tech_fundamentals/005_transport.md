@@ -45,3 +45,9 @@ The Session layer runs on top of the transport layer and many of the features we
 5. It's important to keep in mind that L4 will have two source/destination ports.  One for each direction of the communication. 
 6. Back to ```Flags n things```.  
 ![network_15](../assets/network_15.png)
+
+### Sessions & State
+1. What if we add a firewall to this connection?  How do we avoid issues?
+2. One solution is a ```stateless``` firewall. It doesn't understand the state of a connection.  Network Access Control List in AWS.
+3. Another is a ```stateful``` firewall. In AWS this is how a security group works. Statful understands L4 and the state of the traffic. It's an extension of what a stateless firewall can achieve. 
+![network_16](../assets/network_16.png)
