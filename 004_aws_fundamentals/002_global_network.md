@@ -12,3 +12,4 @@
 1. Edge locations are much smaller than regions and they generally only have content distribution services as well as some type of edge computing. 
     * They are located in many more places than regions.
     * Edge locations are useful for clients who have to store their info as close as possible to their customers; for instance, Netflix.  This allows low latency and high speed distribution.  The further the distance, the slower speed, the higher the latency.
+    * Example: Australia has a region location in Sydney, but an edge location in Melbourne to better handle all of the Melbourne demand. This results in lower latency and better delivery.
