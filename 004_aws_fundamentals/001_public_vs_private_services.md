@@ -13,6 +13,6 @@
 1. Public Internet, AWS Public Zone, AWS Private Zone.
  * Public Interent connects to AWS Public Zone.
  * On-premises networks can access VPCs
- * The upside down U is an Internet gateway. It allows private zone resources to access the public Internet as long as the EC2 has an alocated public IP address. It also allows access to public AWS services such as S3, but crucially this data doesn't touch the public Internet at any point. It communicates with the public service using the AWS Public Zone. 
+ * The upside down U is an Internet gateway. It allows private zone resources to access the public Internet as long as the EC2 has an allocated public IP address. It also allows access to public AWS services such as S3, but crucially this data doesn't touch the public Internet at any point. It communicates with the public service using the AWS Public Zone. 
  * It's possible to give private resources such as EC2 instances a public IP address and this allows the resource to be accessed from the Public Internet. Architecturally what this is doing is projecting the EC2 instance into the Public Zone so that all of that instance or part of it can be communicated with from the Public Internet. 
  ![network_21](../assets/network_21.png)
