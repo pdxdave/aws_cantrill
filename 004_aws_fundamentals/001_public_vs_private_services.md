@@ -7,7 +7,7 @@
 
 ## VPC's
 1. VPC's are isolated unless you configure it otherwise.
-2. Nothing from the Internet can reach them unless you allow it. Services like EC2 can be put in them.
+2. Nothing from the Internet can reach them unless you allow it. Services like EC2 (Elastic Computing Cloud) can be put in them.
 
 ## The three zones
 1. Public Internet, AWS Public Zone, AWS Private Zone.
