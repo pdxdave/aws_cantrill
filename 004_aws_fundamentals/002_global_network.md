@@ -16,7 +16,9 @@
         2. Region name Asian Pacific (Sydney) - console ui
     * Resiliance
         1. If you have infrastructure in Sydney and a mirror in Northern VA, if Sydney blows up, N.VA will be OK.
-        2. 
+            * Globally Resilient Services: A service operates globally with a single database.  Only a few services do this. IAM, Route53
+            * Region Resilient: Services that operate in a single region with one set of data. They operate as separate services in each region. They generally replicate data from multiple AZ's in that region.  In an AZ fails, the service can continue.  If the Region as a whole fails, then the service fails.
+            * AZ Resilient Services: These are services that are run from a single AZ. The the service in that AZ fails, then the service will fail. As a SAA we need to know about AWS services whether it's global, region, or AZ resilient.
 
 
 ### Edge Locations
@@ -26,3 +28,14 @@
     * Example: Australia has a region location in Sydney, but an edge location in Melbourne to better handle all of the Melbourne demand. This results in lower latency and better delivery.
     * There are fewer regions than edge locations.
     * !! With EC2 you have to pick a region. Some services like IAM and Route53 are Global.
+
+### Availability Zones
+1. A lower level architecture available within AWS 
+2. Take Sydney as an eample: ap-southeast-2. Inside every Region AWS provides multiple AZ's.  It could be 2 or up to 6
+    * Sydney has ap-southeast-2a, ap-southeast-2b, ap-southeast-2c
+    * With AZ's you are given isolated infrastructure within a region
+    * isloated storage, networking, computing, power and facilities
+    * in this case if 2a were taken out, 2b and 2c could still offer services provided they are setup that way (e.g., EC2's set up there).
+    * As a SA you can design solutions that span across many AZ's.
+    * AZ's are not data centers. It could be one of many. 
+    * Services can be put across multiple AZ's. 
