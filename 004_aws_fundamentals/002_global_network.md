@@ -12,6 +12,11 @@
         2. Geopolitical Separation - governed by laws of that region. a side note, you have to explicitly tell AWS if you want your data to move between regions.
         3. Location control - tune for performance
     * When referring to a region you do it one of two ways. 
+        1. Region code ap-southeast-2  - cli or api
+        2. Region name Asian Pacific (Sydney) - console ui
+    * Resiliance
+        1. If you have infrastructure in Sydney and a mirror in Northern VA, if Sydney blows up, N.VA will be OK.
+        2. 
 
 
 ### Edge Locations
