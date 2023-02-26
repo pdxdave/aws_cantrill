@@ -33,7 +33,7 @@
 1. A lower level architecture available within AWS 
 2. Take Sydney as an eample: ap-southeast-2. Inside every Region AWS provides multiple AZ's.  It could be 2 or up to 6
     * Sydney has ap-southeast-2a, ap-southeast-2b, ap-southeast-2c
-    * With AZ's you are given isolated infrastructure within a region
+    * With AZ's you are given isolated infrastructures within a region
     * isloated storage, networking, computing, power and facilities
     * in this case if 2a were taken out, 2b and 2c could still offer services provided they are setup that way (e.g., EC2's set up there).
     * As a SA you can design solutions that span across many AZ's.
