@@ -18,7 +18,7 @@
         1. If you have infrastructure in Sydney and a mirror in Northern VA, if Sydney blows up, N.VA will be OK.
             * Globally Resilient Services: A service operates globally with a single database.  Only a few services do this. IAM, Route53
             * Region Resilient: Services that operate in a single region with one set of data. They operate as separate services in each region. They generally replicate data from multiple AZ's in that region.  In an AZ fails, the service can continue.  If the Region as a whole fails, then the service fails.
-            * AZ Resilient Services: These are services that are run from a single AZ. The the service in that AZ fails, then the service will fail. As a SAA we need to know about AWS services whether it's global, region, or AZ resilient.
+            * AZ Resilient Services: These are services that are run from a single AZ. If the service in that AZ fails, then the service will fail. As a SAA we need to know about AWS services whether it's global, region, or AZ resilient.
 
 
 ### Edge Locations
