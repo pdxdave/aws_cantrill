@@ -3,4 +3,11 @@
 1. Go to the EC2 dashboard. Go to ```Network & Security > Key Pairs```
 2. Create an SSH key pair.  This is how we access the EC2 instance.  
 3. When creating the key pair, you only have one chance to download the key.
+
 ![ec2_01](../assets/ec2_01.png)
+
+1. Use .pem for Linux and MacOS. 
+2. After creating the EC2 key pair, the private key will be downloaded to the MacOS KeyChain Access.
+3. Now go back to the EC2 dashboard to ```Instances > instances```. Select the Launch instances button.
+
+![ec2_02](../assets/ec2_02.png)
