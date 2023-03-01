@@ -18,3 +18,8 @@
 4. Put in the key pair name.  This was created when making the key pair
 
 ![ec2_03](../assets/ec2_03.png)
+
+1. Keep the default settings: Network, Subnet, Auto-assing public IP, Firewal, Allow SSH traffic, configure storage.
+2. The ```Create security group``` was given the name ```launch-wizard-1``` by AWS.
+
+![ec2_04](../assets/ec2_04.png)
