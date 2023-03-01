@@ -11,3 +11,10 @@
 3. Now go back to the EC2 dashboard to ```Instances > instances```. Select the Launch instances button.
 
 ![ec2_02](../assets/ec2_02.png)
+
+1. Give the instance a name
+2. Use the default Amazon Linux quick start
+3. Select a free tier AMI, and free Instance type
+4. Put in the key pair name.  This was created when making the key pair
+
+![ec2_03](../assets/ec2_03.png)
