@@ -26,3 +26,8 @@
 
 Continue when you see the status check 2/2    
 ![ec2_05](../assets/ec2_05.png)
+
+1. How to connect to the terminal of an EC2 instance.
+2. Right click over the Instance ID and select ```connect```
+3. You'll see the following dashboard
+![ec2_06](../assets/ec2_06.png)
