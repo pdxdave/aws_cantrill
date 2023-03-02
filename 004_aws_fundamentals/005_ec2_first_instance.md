@@ -23,3 +23,6 @@
 2. The ```Create security group``` was given the name ```launch-wizard-1``` by AWS.
 
 ![ec2_04](../assets/ec2_04.png)
+
+Continue when you see the status check 2/2    
+![ec2_05](../assets/ec2_05.png)
