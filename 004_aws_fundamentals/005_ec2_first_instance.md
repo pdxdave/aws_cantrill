@@ -29,5 +29,13 @@ Continue when you see the status check 2/2
 
 1. How to connect to the terminal of an EC2 instance.
 2. Right click over the Instance ID and select ```connect```
-3. You'll see the following dashboard
+3. You'll see the following dashboard    
+
 ![ec2_06](../assets/ec2_06.png)
+
+1. EC2 Instance Connect is web based.  Session Manager isn't something I would use.
+2. SSH Client. This will require the .pem key in my case.
+
+![ec2_07](../assets/ec2_07.png)
+
+1. In this case
