@@ -34,4 +34,8 @@ Continue when you see the status check 2/2
 ![ec2_06](../assets/ec2_06.png)
 
 1. EC2 Instance Connect is web based.  Session Manager isn't something I would use.
-2. SSH Client 
+2. SSH Client. This will require the .pem key in my case.
+
+![ec2_07](../assets/ec2_07.png)
+
+1. In this case
