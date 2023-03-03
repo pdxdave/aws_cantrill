@@ -13,7 +13,10 @@ NAT is a fundamental technology used in computer networking to allow multiple de
 
 ![network_18](../assets/network_18.png)
 ## Dynamic NAT
-1. This type of NAT is used when you have less Public IP addresses than Private IP addresses, but when all of those Private  IP's need public access at some time.
+1. This type of NAT is used when you have less Public IP addresses than Private IP addresses, but when all of those Private  IP's need public access at some time.    
+2. In this example we have four private IP addresses and two public. 
+3. In the diagram, 10.0.0.42 sends a packet along with its sourse and destination IP addresses.  It goes to the router and sees if it has a current allocation of public addresses from the pool. If it's not currently using one and one is available, one will be dynamically created.  In this case 52.95.36.66.  This is a temporary basis. 
+4. When the previous one is done, 10.0.0.44 can go through the same process and use 52.95.36.66 because it was freed up.
 
 ![network_19](../assets/network_19.png)
 
