@@ -2,6 +2,7 @@
 NAT is a fundamental technology used in computer networking to allow multiple devices to share a single public IP address. This is essential for businesses and individuals who have more devices than available public IP addresses.
 ![network_17](../assets/network_17.png)
 ## Static NAT
+1. The router or NAT device maintains a NAT table.  It stors a 1:1 table between public and private IPs. 
 ![network_18](../assets/network_18.png)
 ## Dynamic NAT
 1. This type of NAT is used when you have less Public IP addresses than Private IP addresses, but when all of those Private  IP's need public access at some time.
