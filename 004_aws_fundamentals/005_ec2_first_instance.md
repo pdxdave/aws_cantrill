@@ -38,4 +38,6 @@ Continue when you see the status check 2/2
 
 ![ec2_07](../assets/ec2_07.png)
 
-1. In this case
+1. To access the EC2 instance over the internet, open a terminal and go to where the .pem key was downloaded.
+2. Copy the ```chmod 400 A4L.pem``` and paste into the terminal.  It will change the permissions.
+3.
