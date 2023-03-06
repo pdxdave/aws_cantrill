@@ -19,3 +19,4 @@
  3. The vale is the data or contents of the boject. !! The value can range for 0 bytes to 5TB.
 
  ## Buckets
+ ![s3_02](../assets/s3_02.png)
