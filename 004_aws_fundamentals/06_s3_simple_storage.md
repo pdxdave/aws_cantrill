@@ -14,3 +14,8 @@
 
 ## Objects
  ![s3_01](../assets/s3_01.png)
+ 1. Think of objects as files. They have two main components and some meta data.
+ 2. The key identifies the object in the bucket. 
+ 3. The vale is the data or contents of the boject. !! The value can range for 0 bytes to 5TB.
+
+ ## Buckets
