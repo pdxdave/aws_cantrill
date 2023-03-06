@@ -20,3 +20,11 @@
 
  ## Buckets
  ![s3_02](../assets/s3_02.png)
+ 1. Buckets are created in a specific AWS region.  This has two main impacts.
+    * First, the data inside the bucket has a primary home region.  It never leaves the region unless you set it up to do so.  This means S3 has stable and controlled sovereignty. 
+    * In the event of a catastrophy, the effects will be contained w/in that region.
+    * !! A bucket name needs to be globally unique across all regions and all AWS accounts
+    * They can hold unlimitted objects.  Infinately scalable storage system.
+    * !! As an object storage system, S3 buckets have no complex structure. It's flat.  All objects are stored at the same level.
+    * Folders are often referred to as prefixes in S3. They're not part of the object name, the prefix the object names.
+    * Buckets are generally the default place you should go to to configure the way that S3 works.
