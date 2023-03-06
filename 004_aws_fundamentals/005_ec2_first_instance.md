@@ -40,4 +40,5 @@ Continue when you see the status check 2/2
 
 1. To access the EC2 instance over the internet, open a terminal and go to where the .pem key was downloaded.
 2. Copy the ```chmod 400 A4L.pem``` and paste into the terminal.  It will change the permissions.
-3.
+3. Then copy and paste ```ssh -i "A4L.pem" ec2-user@ec2-174-129-136-31.compute-1.amazonaws.com``` enter.  Now I will be connected to the instance.
+4. So what happened?  We have the private key and AWS has the public. The public can be found at the EC2 dashbooard > key Pairs.
