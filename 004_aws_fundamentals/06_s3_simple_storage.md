@@ -28,3 +28,16 @@
     * !! As an object storage system, S3 buckets have no complex structure. It's flat.  All objects are stored at the same level.
     * Folders are often referred to as prefixes in S3. They're not part of the object name, the prefix the object names.
     * Buckets are generally the default place you should go to to configure the way that S3 works.
+
+### Summary Info
+1. Bucket names are all globally unique
+2. 3 - 63 characters, all lowercase, no underscores
+3. Must start with lowercase letter or a number
+4. Cannot be IP formatted e.g., 1.1.1.1
+5. !!! Buckets have a soft limit of 100, and a 1000 hard limit per AWS account
+    * You cannot implement a solution if you have 1 bucket per user if you have this amount of users
+    * What you can do is take a single bucket and divide it up using prefixes (so those folders that aren't really folders), and then in that way you can have multiple users in a bucket.
+6. Unlmitted objects in a bucket, 0 bytes to 5TB
+7. key = Name, value = Data
+
+## Patterns and Anti-Patterns
