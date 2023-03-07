@@ -41,3 +41,6 @@
 7. key = Name, value = Data
 
 ## Patterns and Anti-Patterns
+1. S3 is an object store.  It is not a file storage system or a block storage system.
+2. If you're accessing the whole of an object such as an image or an audio file, S3 is the right choice.
+3. If you have a windows server that needs to access a file-based system, then S3 is not the right choice.
