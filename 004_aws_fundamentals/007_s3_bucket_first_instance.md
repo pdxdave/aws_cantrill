@@ -30,3 +30,6 @@
 
 ![s3_bucket_first_07](../assets/s3_bucket_first_07.png)
 1. You can upload files and folders
+
+![s3_bucket_first_08](../assets/s3_bucket_first_08.png)
+1. After a successful upload hit the close button
