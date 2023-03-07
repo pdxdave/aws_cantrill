@@ -44,3 +44,8 @@
 1. S3 is an object store.  It is not a file storage system or a block storage system.
 2. If you're accessing the whole of an object such as an image or an audio file, S3 is the right choice.
 3. If you have a windows server that needs to access a file-based system, then S3 is not the right choice.
+4. When you deal with virtual machines or instances you mount block storage to them. Block storage is basically virtual hard disks. 
+5. In EC2 you have EBS which is block storage.
+6. Block storage is generally limited to one thing accessing it at a time.  One instance in the case of EBS.
+7. S3 doesn't have that single user limitation and it's not block storage.  That means you cannot mount it as a drive.
+8. S3 is great for large scale data storage or distribution.  It's also good for offloading things.  For instance, if you have a blog with lots of posts and images, instead of storing all that data on an expensive compute instance, you can move it to a S3 bucket and configure your software to point your uses at S3 directly.
