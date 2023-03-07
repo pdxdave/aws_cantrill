@@ -49,3 +49,5 @@
 6. Block storage is generally limited to one thing accessing it at a time.  One instance in the case of EBS.
 7. S3 doesn't have that single user limitation and it's not block storage.  That means you cannot mount it as a drive.
 8. S3 is great for large scale data storage or distribution.  It's also good for offloading things.  For instance, if you have a blog with lots of posts and images, instead of storing all that data on an expensive compute instance, you can move it to a S3 bucket and configure your software to point your uses at S3 directly.
+9. S3 should be your default thought for any input to AWS services or output from AWS services.  Most services that consume data and or output data can have S3 as an option to take data from or put data to when it's finished.
+10. !! Exam questions. S3 should be your first choice to store data.
