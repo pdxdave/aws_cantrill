@@ -12,3 +12,24 @@
 3. Disabling the "Block all public access" doesn't give it public access.  It just means you can give it public access.
 
 ![s3_bucket_first_03](../assets/s3_bucket_first_03.png)
+1. Get back to this later
+
+![s3_bucket_first_04](../assets/s3_bucket_first_04.png)
+1. Bucket created
+2. Select the bucket
+
+![s3_bucket_first_05](../assets/s3_bucket_first_05.png)
+1. All resources in AWS have a unique identifyer: ARN.  They uniquely reference one resource within AWS.
+    * arn: amazon resource name
+    * aws: in most regions this will always say aws
+    * s3: the service name
+
+### Uploading files to S3 Bucket
+![s3_bucket_first_06](../assets/s3_bucket_first_06.png)
+1. Go to Objects then select Upload
+
+![s3_bucket_first_07](../assets/s3_bucket_first_07.png)
+1. You can upload files and folders
+
+![s3_bucket_first_08](../assets/s3_bucket_first_08.png)
+1. After a successful upload hit the close button
