@@ -32,4 +32,5 @@
 1. You can upload files and folders
 
 ![s3_bucket_first_08](../assets/s3_bucket_first_08.png)
-1. After a successful upload hit the close button
+1. After a successful upload hit the close button    
+2. We can create a folder for the images, but since this is a flat file system it doesn't really create a folder.  It's emulating a folder.  An object is being created.  Create a folder called "archive".
