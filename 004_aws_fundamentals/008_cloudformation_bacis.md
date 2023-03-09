@@ -18,3 +18,5 @@ CloudFormaton is a tool which lets you create, update, and delete infrastructure
 7. Parameters is where can add fields to prompt the user for more information. Drop downs and so forth will appear for the user to select from.
     * Could ask the user what size of instance to use, the name of something, the number of AZs to use, etc.
     ![cf_02](../assets/cf_02.png)
+8. Mappings can be used for key/value lookup tables
+    ![cf_03](../assets/cf_03.png)
