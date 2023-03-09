@@ -21,3 +21,4 @@ CloudFormaton is a tool which lets you create, update, and delete infrastructure
 8. Mappings can be used for key/value lookup tables
     * An optional section
     ![cf_03](../assets/cf_03.png)
+9. Conditions
