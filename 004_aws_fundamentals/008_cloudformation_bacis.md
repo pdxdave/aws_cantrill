@@ -21,4 +21,10 @@ CloudFormaton is a tool which lets you create, update, and delete infrastructure
 8. Mappings can be used for key/value lookup tables
     * An optional section
     ![cf_03](../assets/cf_03.png)
-9. Conditions
+9. Conditions allow decision making in a template.  Only certain things will happen if a condition is met. It is a two step process.
+    * Create the condition.  
+    * If true, the condition is acted upon.
+
+10. Outputs.  Once the template is finished, it can present outputs based on what has been created, updated, whatever. 
+
+## Using Templates
