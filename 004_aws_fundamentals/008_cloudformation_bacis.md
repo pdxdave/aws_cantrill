@@ -15,3 +15,6 @@ CloudFormaton is a tool which lets you create, update, and delete infrastructure
 6. Metadata: This does many things
     * It can control how the different things in the CloudFormation template are presented through the console UI, so through the AWS console if you're applying it. You can specify groups, control the order, add descriptions to labels, etc. 
     ![cf_01](../assets/cf_01.png)
+7. Parameters is where can add fields to prompt the user for more information. Drop downs and so forth will appear for the user to select from.
+    * Could ask the user what size of instance to use, the name of something, the number of AZs to use, etc.
+    ![cf_02](../assets/cf_02.png)
