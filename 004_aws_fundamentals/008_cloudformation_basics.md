@@ -28,3 +28,4 @@ CloudFormaton is a tool which lets you create, update, and delete infrastructure
 10. Outputs.  Once the template is finished, it can present outputs based on what has been created, updated, whatever. 
 
 ## Using Templates
+1. This example creates an EC2 instance
