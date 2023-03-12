@@ -38,3 +38,7 @@ CloudFormaton is a tool which lets you create, update, and delete infrastructure
     * !! for any logical resources in the stack, CF makes a corresponding physical resource in your AWS account. So in this example, we have a call for an EC2 instance. The physical resource is the actual EC2 instance which CF creates.  ```It's CFs job to keep the logical and physical resources in sync```.
     * So when you use a template to create a stack, CF will scan the template, create a stack with logical resources inside and then create physical resources which match. 
     * You can also take a template, update it, and then use it to update that same stack. 
+    * If the logical resources have been completely removed from the template, the stack will update resulting in a deletion of the physical resources. 
+    * CF lets you automate infrastructure.
+    * CF can also be used as part of change management.  You can store templates in source code reponsitories, add changes, get approval, and do all of this before applying them.
+    * They can be used to spin up one off deployments.
