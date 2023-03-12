@@ -13,7 +13,7 @@ CloudFormaton is a tool which lets you create, update, and delete infrastructure
 4. Description: the author can describe what's going on.  Only gotcha is that the description must follow the AWSTemplateFormatVersion if it exists.
 5. AWSTemplateFormatVersion. This is used to allow the extending of standards over time. If you don't put it in, AWS will just assume its value.
 6. Metadata: This does many things
-    * It can control how the different things in the CloudFormation template are presented through the console UI, so through the AWS console if you're applying it. You can specify groups, control the order, add descriptions to labels, etc. 
+    * It can control how the different things in the CloudFormation template are presented through the console UI, so through the AWS console if you're applying it. You can specify groupings, control the order, add descriptions to labels, etc. 
     ![cf_01](../assets/cf_01.png)
 7. Parameters is where can add fields to prompt the user for more information. Drop downs and so forth will appear for the user to select from.
     * Could ask the user what size of instance to use, the name of something, the number of AZs to use, etc.
@@ -25,7 +25,8 @@ CloudFormaton is a tool which lets you create, update, and delete infrastructure
     * Create the condition.  
     * If true, the condition is acted upon.
 
-10. Outputs.  Once the template is finished, it can present outputs based on what has been created, updated, whatever. 
+10. Outputs. Once the template is finished, it can present outputs based on what has been created, updated, whatever. 
 
 ## Using Templates
-1. This example creates an EC2 instance
+1. This example is an template creates an EC2 instance
+![cf_04](../assets/cf_04.png)
