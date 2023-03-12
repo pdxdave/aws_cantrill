@@ -28,5 +28,13 @@ CloudFormaton is a tool which lets you create, update, and delete infrastructure
 10. Outputs. Once the template is finished, it can present outputs based on what has been created, updated, whatever. 
 
 ## Using Templates
-1. This example is an template creates an EC2 instance
+1. This example is a template creates an EC2 instance
 ![cf_04](../assets/cf_04.png)
+2. Resources inside a CloudFormation are called logical resources.  The logical resource in this case is called ```instance```.  
+    * A logical resource has a Type.  It's the type that lets CloudFormation know what it has to create.
+    * Logical resources typically have Properties that CF uses to configure the resources.
+    * When you give CF a template, it creates a stack. The stack contains all of the logical resources that the template tells it to contain.
+    * One template could create 1 or more stacks. 
+    * !! for any logical resources in the stack, CF makes a corresponding physical resource in your AWS account. So in this example, we have a call for an EC2 instance. The physical resource is the actual EC2 instance which CF creates.  ```It's CFs job to keep the logical and physical resources in sync```.
+    * So when you use a template to create a stack, CF will scan the template, create a stack with logical resources inside and then create physical resources which match. 
+    * You can also take a template, update it, and then use it to update that same stack. 
