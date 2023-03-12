@@ -42,5 +42,3 @@ CloudFormaton is a tool which lets you create, update, and delete infrastructure
     * CF lets you automate infrastructure.
     * CF can also be used as part of change management.  You can store templates in source code reponsitories, add changes, get approval, and do all of this before applying them.
     * They can be used to spin up one off deployments.
-    
-![cw_01](../assets/cw_01.png)

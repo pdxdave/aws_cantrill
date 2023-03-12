@@ -16,3 +16,5 @@ It performs three main jobs:
 3. CloudWatch Events. AWS Services & Schedules. This functions as an event hub.  CW Events provides two powerful features.
     * If an AWS service does something, maybe an EC2 instance is terminated, started, or stopped, the CW Events will generate an event which can perform another action.
     * It can also generate events to do something a certain day or certain days of the week. 
+
+![cw_01](../assets/cw_01.png)
