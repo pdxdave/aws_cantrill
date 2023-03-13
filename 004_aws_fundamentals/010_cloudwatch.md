@@ -35,5 +35,5 @@ It performs three main jobs:
 6. ?? How do we separate the data for these? Dimensions.
 
 ### Dimension
-[cw_02](../assets/cw_02.png)
+![cw_02](../assets/cw_02.png)
 1. Let's say we have three EC2 instances, instance A, B, C.
