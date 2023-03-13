@@ -37,3 +37,7 @@ It performs three main jobs:
 ### Dimension
 ![cw_02](../assets/cw_02.png)
 1. Let's say we have three EC2 instances, instance A, B, C.
+2. Each second a CPU is sending a data point. In this example, 3 data points per second.
+3. The are specifying the name space, the metric, and the data point.  Included with these are ```dimensions```.
+4. Dimensions are name/value pairs which allow CW to separate things. 
+    * A common example of this are when sending data points into CW for CPU utlization of EC2, AWS also sends in the instance ID and the instance type as dimensions. This allows us to view datapoints for a particular instance, for example, so we can look inside a given namespace, so AWS/EC2, look inside a particular metric, which is CPU utilization, 
