@@ -28,4 +28,12 @@ It performs three main jobs:
         1. cpu utilization
         2. network in/out
     * a metric is not for a specific server. it might be receiving data from lots of EC2 instances. We need a way of identifying which things log data.
-5. Datapoints.  Let's say we have a metric called ```cpu utilization```.  Everytime any server measures its utilization
+5. Datapoints.  Let's say we have a metric called ```cpu utilization```.  Everytime any server measures its utilization and sends it into CW, that goes into the cpu utilization metric, and each one of those measurements, so evertime the server reports its CPU, that measurement is called a data point.
+    * A datapoint consists of a time stamp with year, month, date, time and time zone.
+    * And it has a value like 98.3 which means 98.3 percent of utilization.
+    * The cpu utilization metric could contain data for many servers. 
+6. ?? How do we separate the data for these? Dimensions.
+
+### Dimension
+[cw_02](../assets/cw_02.png)
+1. Let's say we have three EC2 instances, instance A, B, C.
