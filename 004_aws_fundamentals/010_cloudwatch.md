@@ -28,3 +28,4 @@ It performs three main jobs:
         1. cpu utilization
         2. network in/out
     * a metric is not for a specific server. it might be receiving data from lots of EC2 instances. We need a way of identifying which things log data.
+5. Datapoints.  Let's say we have a metric called ```cpu utilization```.  Everytime any server measures its utilization
