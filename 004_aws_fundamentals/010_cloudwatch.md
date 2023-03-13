@@ -18,3 +18,13 @@ It performs three main jobs:
     * It can also generate events to do something a certain day or certain days of the week. 
 
 ![cw_01](../assets/cw_01.png)
+
+### Name space
+1. Think of name space as a container for monitoring data. It's a way to keep things from becoming messy. 
+2. NS can have a name and they can be almost anything as long as it follows the rule sets. 
+3. One exception. All AWS data goes into an AWS namespace called ```AWS/service```
+4. NS contain related metrics. 
+    * a metric is a collection of related data points in a time ordered structure
+        1. cpu utilization
+        2. network in/out
+    * a metric is not for a specific server. it might be receiving data from lots of EC2 instances. We need a way of identifying which things log data.
