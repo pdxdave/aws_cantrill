@@ -11,3 +11,7 @@
 ![cw_09](../assets/cw_09.png)
 4. When status check is 2/2, run a search for CloudWatch
 ![cw_10](../assets/cw_10.png)
+5. CloudWatch Dashboard > Alarms 
+![cw_11](../assets/cw_11.png)
+6. All alarms > Create alarm
+![cw_12](../assets/cw_12.png)
