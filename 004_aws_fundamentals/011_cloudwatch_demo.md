@@ -15,3 +15,9 @@
 ![cw_11](../assets/cw_11.png)
 6. All alarms > Create alarm
 ![cw_12](../assets/cw_12.png)
+7. Select metric
+![cw_13](../assets/cw_13.png)
+8. Now look for EC2.  The CPU Utilize metric is inside the EC2 name space.
+![cw_14](../assets/cw_14.png)
+9. Per-Instance Metrics
+![cw_15](../assets/cw_15.png)
