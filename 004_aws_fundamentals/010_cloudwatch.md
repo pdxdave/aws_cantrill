@@ -40,4 +40,12 @@ It performs three main jobs:
 2. Each second a CPU is sending a data point. In this example, 3 data points per second.
 3. The are specifying the name space, the metric, and the data point.  Included with these are ```dimensions```.
 4. Dimensions are name/value pairs which allow CW to separate things. 
-    * A common example of this are when sending data points into CW for CPU utlization of EC2, AWS also sends in the instance ID and the instance type as dimensions. This allows us to view datapoints for a particular instance, for example, so we can look inside a given namespace, so AWS/EC2, look inside a particular metric, which is CPU utilization, 
+    * A common example of this are when sending data points into CW for CPU utlization of EC2, AWS also sends in the instance ID and the instance type as dimensions. This allows us to view datapoints for a particular instance, for example, so we can look inside a given namespace, so AWS/EC2, look inside a particular metric, which is CPU utilization, and then we can use the dimension to look for all of the datapoints for a particular instance ID.
+5. CW allows us to take actions based on metrics, and this is done using alarms. 
+
+### Alarms
+![cw_03](../assets/cw_03.png)
+1. Alarms are created and linked to a specific metric.  It will take asction based on that metric.
+2. An alarm in an OK state means everything is OK.
+3. It can also move into an Alarm state. That means something bad has happened.  Based on this you can define an action.
+4. The action could be to send a notification to an SNS topic.
