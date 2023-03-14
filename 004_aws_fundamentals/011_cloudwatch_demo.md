@@ -21,3 +21,7 @@
 ![cw_14](../assets/cw_14.png)
 9. Per-Instance Metrics
 ![cw_15](../assets/cw_15.png)
+10. This will show app of the pre-instance metrics we currently have.  Scroll until you find CPUUtilization. Check the box, then select metric button
+![cw_16](../assets/cw_16.png)
+11. Specify metric and conditions
+![cw_17](../assets/cw_17.png)
