@@ -30,5 +30,5 @@
 13. Now we can choose to have SNS notification.  This would be good for production, but in this practice case, not really.  Just take the Remove button. Select Next.
 ![cw_19](../assets/cw_19.png)
 14. Now give it an alarm name, then next, then create alarm.
-![cw_20](../assets/cw_20.png)
+
 15. It'll take you back to Alarms.  The state will be insufficient since it doesn't really have any data.
