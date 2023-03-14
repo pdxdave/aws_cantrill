@@ -21,11 +21,14 @@
 ![cw_14](../assets/cw_14.png)
 9. Per-Instance Metrics
 ![cw_15](../assets/cw_15.png)
-10. This will show app of the pre-instance metrics we currently have.  Scroll until you find CPUUtilization. Check the box, then select metric button
+10. This will show all of the pre-instance metrics we currently have.  Scroll until you find CPUUtilization. Check the box, then select metric button
 ![cw_16](../assets/cw_16.png)
 11. Specify metric and conditions
 ![cw_17](../assets/cw_17.png)
 12. Scroll down to Conditions.  Keep static b/c you want the alarm to go into an alarm state when something happens to the CPUUtilization. When the CPUUtilization is greater/equal than 15%, then the alarm will go off.  Click next.
 ![cw_18](../assets/cw_18.png)
-13. Now we can choose to have SNS notification.  This would be good for production, but in this practice case, not really.  Just take the Remove button.
+13. Now we can choose to have SNS notification.  This would be good for production, but in this practice case, not really.  Just take the Remove button. Select Next.
 ![cw_19](../assets/cw_19.png)
+14. Now give it an alarm name, then next, then create alarm.
+![cw_20](../assets/cw_20.png)
+15. It'll take you back to Alarms.  The state will be insufficient since it doesn't really have any data.
